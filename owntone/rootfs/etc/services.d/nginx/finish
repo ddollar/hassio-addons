@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Ulrar Hass.io Add-ons: forked-daapd server
-# Runs the forked-daapd Server
+# Ulrar Hass.io Add-ons: owntone server
+# Runs the owntone Server
 # ==============================================================================
 # shellcheck disable=SC1091
 

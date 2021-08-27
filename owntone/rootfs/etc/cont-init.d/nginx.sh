@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Ulrar Hass.io Add-ons: forked-daapd server
-# Configures the forked-daapd Server
+# Ulrar Hass.io Add-ons: owntone server
+# Configures the owntone Server
 # ==============================================================================
 
 declare ingress_interface

@@ -1,10 +1,10 @@
 {
-  "name": "Forked DAAPD",
+  "name": "Owntone",
   "version": "dev",
-  "slug": "forked-daapd",
+  "slug": "owntone",
   "panel_icon": "mdi:music-circle",
   "description": "Linux/FreeBSD DAAP (iTunes) and MPD media server with support for AirPlay devices (multiroom), Apple Remote (and compatibles), Chromecast, Spotify and internet radio.",
-  "url": "https://github.com/ulrar/hassio-addons",
+  "url": "https://github.com/ddollar/hassio-addons",
   "webui": "http://[HOST]:[PORT:3689]/",
   "stage": "experimental",
   "ingress": true,

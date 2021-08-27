@@ -158,7 +158,7 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Forked-daapd Server" \
+    io.hass.name="Owntone Server" \
     io.hass.description="The owntone server program" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
@@ -166,7 +166,7 @@ LABEL \
     maintainer="Ulrar" \
     org.label-schema.description="The owntone server program" \
     org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.name="Forked-daapd Server" \
+    org.label-schema.name="Owntone Server" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.url="" \
     org.label-schema.usage="" \
