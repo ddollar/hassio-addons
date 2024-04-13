@@ -4,4 +4,6 @@
 # Load client kernel module
 # ==============================================================================
 
+bashio::log.info "loading vhci-hcd kernel module"
+
 /sbin/modprobe vhci-hcd

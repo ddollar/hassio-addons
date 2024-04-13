@@ -1,0 +1,9 @@
+#!/command/with-contenv bashio
+
+bashio::log.info "detaching usbip devices"
+
+for port in $(/usr/sbin/usbip port | grep Port | cut -b 6-7); do
+	bashio::log.info "detaching port:${port}"
+
+	/usr/sbin/usbip detach -p "${port}"
+done
