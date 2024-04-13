@@ -1,14 +1,16 @@
 #!/command/with-contenv bashio
 
+mount -o remount -t sysfs sysfs /sys
+
 bashio::log.info "attaching usbip devices"
 
 for device in $(bashio::config 'devices|keys'); do
 	server_address=$(bashio::config "devices[${device}].server_address")
 	bus_id=$(bashio::config "devices[${device}].bus_id")
 
-	bashio::log.info "attaching ${server_address} ${bus_id}"
+	bashio::log.info "attaching server:${server_address} bus_id:${bus_id}"
 
-	/usr/sbin/usbip --debug attach -r ${server_address} -b ${bus_id}
+	/usr/sbin/usbip attach -r ${server_address} -b ${bus_id}
 done
 
 # wait forever
