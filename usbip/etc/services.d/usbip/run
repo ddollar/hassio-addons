@@ -11,6 +11,8 @@ for device in $(bashio::config 'devices|keys'); do
 	bashio::log.info "attaching server:${server_address} bus_id:${bus_id}"
 
 	/usr/sbin/usbip attach -r ${server_address} -b ${bus_id}
+
+	sleep 1
 done
 
 # wait forever
